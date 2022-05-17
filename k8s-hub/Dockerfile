@@ -11,7 +11,8 @@ RUN apt-get update \
     #
     && apt-get install -y git \
     && git clone \
-         https://github.com/brianaydemir/oauthenticator.git \
+         ## For https://github.com/jupyterhub/oauthenticator/pull/503.
+         https://github.com/jupyterhub/oauthenticator.git \
          /build/oauth \
     && python3 -m pip install -U --no-cache-dir /build/oauth \
     && rm -rf /build/ \
