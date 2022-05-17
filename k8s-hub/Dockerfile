@@ -21,6 +21,6 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN python3 -m pip install --no-cache-dir osg-jupyter==0.5.0-a1
+RUN python3 -m pip install --no-cache-dir osg-jupyter==1.0.0
 
 USER jovyan
