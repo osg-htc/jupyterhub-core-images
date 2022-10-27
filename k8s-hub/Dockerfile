@@ -13,7 +13,7 @@ USER root
 RUN apt-get update \
     && apt-get upgrade -y \
     && python3 -m pip install -U --no-cache-dir \
-        git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@80e07d2bdeab972599442b4a1e01babe0ebd6f51 \
+        git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@2a5e4cd7493b7170d3d581eb03d825a809ebaa52 \
         git+https://github.com/brianaydemir/osg-jupyter.git@0315c619a17725eb4ea9925157a079af0a9be861 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
