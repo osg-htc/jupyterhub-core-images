@@ -14,8 +14,8 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && python3 -m pip install -U --no-cache-dir \
         git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@15.1.0-osg.2 \
-        git+https://github.com/brianaydemir/osg-jupyter.git@2.1.0 \
+        git+https://github.com/brianaydemir/osg-jupyter.git@b6f73a39018fdf7edc333802572e1b6e911fea43 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-USER jovyan
+USER $NB_UID:$NB_GID
