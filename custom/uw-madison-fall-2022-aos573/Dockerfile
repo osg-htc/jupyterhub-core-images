@@ -201,6 +201,6 @@ RUN conda install -y \
 RUN jupyter labextension install dask-labextension \
     && jupyter serverextension enable --py --sys-prefix dask_labextension
 
-RUN python3 -m pip install syphon
+RUN python3 -m pip install siphon
 
 USER $NB_UID:$NB_GID
