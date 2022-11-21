@@ -162,6 +162,7 @@ RUN conda install -y \
       pyqtchart \
       pyshp \
       python-eccodes \
+      python-graphviz \
       pyyaml \
       qt-main \
       scipy \
@@ -199,5 +200,7 @@ RUN conda install -y \
 
 RUN jupyter labextension install dask-labextension \
     && jupyter serverextension enable --py --sys-prefix dask_labextension
+
+RUN python3 -m pip install syphon
 
 USER $NB_UID:$NB_GID
