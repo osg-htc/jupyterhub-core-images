@@ -13,6 +13,7 @@ USER root
 RUN apt-get update \
     && apt-get upgrade -y \
     && python3 -m pip install -U --no-cache-dir \
+        jupyterhub-kubespawner \
         git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@15.1.0-osg.2 \
         git+https://github.com/brianaydemir/osg-jupyter.git@4df3f3399c92e2de8f451ce5dc048be1b16de1d3 \
     && apt-get clean \
