@@ -14,14 +14,14 @@ Overview
 
 - `<k8s-hub/>`_:
 
-    - The main "hub" image for Z2JH.
-    - Includes a custom version of the oauthenticator_ package.
-    - Includes the osg-jupyterhub-hooks_ package.
+  - The main "hub" image for Z2JH.
+  - Includes a custom version of the oauthenticator_ package.
+  - Includes the osg-jupyterhub-hooks_ package.
 
 - `<sssd/>`_:
 
-    - An image for running sssd_.
-    - Requires configuration.
+  - An image for running sssd_.
+  - Requires configuration.
 
 .. _oauthenticator: https://github.com/brianaydemir/jupyterhub-oauthenticator
 .. _osg-jupyterhub-hooks: https://github.com/osg-htc/jupyterhub-hooks
