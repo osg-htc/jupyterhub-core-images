@@ -40,9 +40,9 @@ sqlite_cache = true
 
 
 [tool.poetry]
-name = "osg_jupyter_docker"
-version = "2.0.0"
-description = "OSG's container images for customizing Jupyter"
+name = "osg_jupyterhub_core_images"
+version = "0.0.1"
+description = "Docker images for OSG's JupyterHub instance"
 license = "Apache-2.0"
 authors = ["Brian Aydemir <baydemir@morgridge.org>"]
 repository = "https://github.com/brianaydemir/osg-jupyter-docker"
@@ -53,16 +53,16 @@ packages = []
 python = "^3.8"
 
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 bandit = "~1.7"
-black = "~22.8"
+black = "~22.12"
 docutils = "~0.19"
 isort = "~5.10"
-mypy = "~0.971"
+mypy = "~0.991"
 pre-commit = "~2.20"
 pylint = "~2.15"
 "ruamel.yaml.cmd" = "~0.6"
-safety = "~2.1"
+safety = "~2.3"
 
 
 [tool.pylint.messages-control]
