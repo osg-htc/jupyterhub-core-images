@@ -41,7 +41,7 @@ jobs:
         flavor: |
           latest=false
         images: |
-          hub.opensciencegrid.org/osg-jupyter/${{ matrix.image-name }}
+          hub.opensciencegrid.org/osg-jupyterhub/${{ matrix.image-name }}
         tags: |
           type=ref,event=branch
           type=ref,event=tag
