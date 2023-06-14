@@ -2,7 +2,7 @@
 #
 # For use with Zero to JupyterHub for Kubernetes (https://z2jh.jupyter.org/).
 
-FROM jupyterhub/k8s-hub:0.11.1
+FROM jupyterhub/k8s-hub:1.2.0
 
 USER root
 
