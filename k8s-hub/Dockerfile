@@ -2,7 +2,7 @@
 #
 # For use with Zero to JupyterHub for Kubernetes (https://z2jh.jupyter.org/).
 
-FROM jupyterhub/k8s-hub:1.2.0
+FROM jupyterhub/k8s-hub:2.0.0
 
 USER root
 
@@ -14,7 +14,7 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && python3 -m pip install -U --no-cache-dir \
         git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@15.1.0+osg.3 \
-        git+https://github.com/osg-htc/jupyterhub-hooks.git@86755e7d22f2db567cca389a4d9823df0e07a537 \
+        git+https://github.com/osg-htc/jupyterhub-hooks.git@1e5e25b5e276b25a0bd3225252fd6f6b8254f208 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
