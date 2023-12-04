@@ -4,18 +4,24 @@
 
 FROM jupyterhub/k8s-hub:2.0.0
 
-USER root
+# Reference: https://github.com/hadolint/hadolint/wiki/DL4006
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # We install oauthenticator>=15.0.0 in order to accommodate JupyterHub
 # instances with multiple public URLs. That is the first released version
 # to include https://github.com/jupyterhub/oauthenticator/pull/503.
 
-RUN apt-get update \
+USER root
+WORKDIR /tmp
+RUN true \
+    && apt-get update -y \
     && apt-get upgrade -y \
     && python3 -m pip install -U --no-cache-dir \
         git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@15.1.0+osg.3 \
         git+https://github.com/osg-htc/jupyterhub-hooks.git@6.0.4 \
     && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && true
 
 USER $NB_UID:$NB_GID
