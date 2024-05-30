@@ -2,7 +2,7 @@
 #
 # For use with Zero to JupyterHub for Kubernetes (https://z2jh.jupyter.org/).
 
-FROM quay.io/jupyterhub/k8s-hub:3.2.1
+FROM quay.io/jupyterhub/k8s-hub:3.3.7
 
 # Reference: https://github.com/hadolint/hadolint/wiki/DL4006
 
@@ -19,7 +19,7 @@ RUN true \
     && apt-get upgrade -y \
     && python3 -m pip install -U --no-cache-dir \
         git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@15.1.0+osg.3 \
-        git+https://github.com/osg-htc/jupyterhub-hooks.git@7.0.0 \
+        git+https://github.com/osg-htc/jupyterhub-hooks.git@7.1.1 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && true
