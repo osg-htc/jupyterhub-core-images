@@ -13,7 +13,6 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # to include https://github.com/jupyterhub/oauthenticator/pull/503.
 
 USER root
-WORKDIR /tmp
 RUN true \
     && apt-get update -y \
     && apt-get upgrade -y \
