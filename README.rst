@@ -18,14 +18,8 @@ Overview
   - Includes a custom version of the oauthenticator_ package.
   - Includes the osg-jupyterhub-hooks_ package.
 
-- `<sssd/>`_:
-
-  - An image for running sssd_.
-  - Requires configuration.
-
 .. _oauthenticator: https://github.com/brianaydemir/jupyterhub-oauthenticator/tree/15.1.0-osg
 .. _osg-jupyterhub-hooks: https://github.com/osg-htc/jupyterhub-hooks
-.. _sssd: https://sssd.io
 
 
 Development
