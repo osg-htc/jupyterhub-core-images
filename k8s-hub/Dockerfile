@@ -19,7 +19,7 @@ RUN true \
     && apt-get install -y \
           procps \
     && python3 -m pip install -U --no-cache-dir \
-        git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@2ebbbcd220bb267fc00d639060334443585065d0 \
+        git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@2471f2d27d6bf8a98a465d3cf2f6ff8e4e15ff2d \
         git+https://github.com/osg-htc/jupyterhub-hooks.git@7.1.1 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
