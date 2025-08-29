@@ -20,8 +20,8 @@ RUN true \
           procps \
     && python3 -m pip install -U --no-cache-dir \
         jupyterhub-fancy-profiles \
-        git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@2471f2d27d6bf8a98a465d3cf2f6ff8e4e15ff2d \
-        git+https://github.com/osg-htc/jupyterhub-hooks.git@d0439fea4c2de38df3596b937791057cb9db91d6 \
+        git+https://github.com/brianaydemir/jupyterhub-oauthenticator.git@a52c1d2c7dc2b98a2da8cd1b71e1060232dbd2ce \
+        git+https://github.com/osg-htc/jupyterhub-hooks.git@d1e9fe1217bef54c6428050f6fa237972f0e933b \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && true
