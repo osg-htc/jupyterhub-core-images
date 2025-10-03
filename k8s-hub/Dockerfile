@@ -2,7 +2,7 @@
 #
 # For use with Zero to JupyterHub for Kubernetes (https://z2jh.jupyter.org/).
 
-FROM quay.io/jupyterhub/k8s-hub:4.0.0
+FROM quay.io/jupyterhub/k8s-hub:4.2.0
 
 # Reference: https://github.com/hadolint/hadolint/wiki/DL4006
 
